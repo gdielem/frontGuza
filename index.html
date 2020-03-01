@@ -37,13 +37,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" id="logOut">Se déconnecter</a>
           </li>
         </ul>
       </div>
@@ -162,11 +156,11 @@
                   </div>
                   <div class="modal-body">
                     <label>Nom</label>
-                    <input type="text" class="form-control" placeholder="Tapez le nom du client">
+                    <input id="newClientName" type="text" class="form-control" placeholder="Tapez le nom du client">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                    <button id="buttonNewClient" type="button" class="btn btn-primary">Enregistrer</button>
                   </div>
                 </div>
               </div>
@@ -188,7 +182,34 @@
 
   </div>
   <!-- /.container -->
+<!--Connexion Page -->
+  <div id="connexionView" class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Se connecter</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <label for="inputEmail">Adresse Email</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Email" required autofocus>
 
+              </div>
+
+              <div class="form-label-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+              </div>
+              <br>
+              <button id="buttonConnexion" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Se connecter</button>
+              <hr class="my-4">
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
